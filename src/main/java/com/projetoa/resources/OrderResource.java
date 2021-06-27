@@ -21,7 +21,6 @@ public class OrderResource {
 	
 	@GetMapping
 	public ResponseEntity<List<Order>> findAll() {
-		//Order u = new Order(1L, "Maria", "maria@gmail.com", "999999", "111111");
 		List<Order> list = service.findALL();
 		return ResponseEntity.ok().body(list);
 	}
